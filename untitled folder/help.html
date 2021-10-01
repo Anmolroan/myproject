@@ -17,9 +17,7 @@
   cursor: pointer;
   
 }
-        #container{
-          /* background-color: blanchedalmond; */
-        }
+        
         #header{
             position: fixed;
             display: grid;
@@ -33,51 +31,12 @@
         #zaraheader{
             
        position: fixed;
-            margin-left: 10%;
+            margin-left: 6%;
             cursor: pointer;
-          /* border: solid; */
+          
           
         }
-        /* #zaraheader>div:nth-child(2){
-            display: inline-block;
-           font-size: 110px;
-          
-           width: 40px;
-           color: rgb(14, 12, 12);
-           font-family:  "Didot";
-           
-          
-            
-        }
-        #zaraheader>div:nth-child(1){
-            display: inline-block;
-           font-size: 110px;
-           width: 27px;
-          
-           font-family:  "Didot";
-           color: rgb(14, 12, 12);
-          
-            
-        }
-        #zaraheader>div:nth-child(3){
-            display: inline-block;
-           font-size: 110px;
-           margin-left: 10px ;
-           font-family:  "Didot";
-           color: rgb(14, 12, 12);
-           
-        }
-        #zaraheader>div:nth-child(4){
-            display: inline-block;
-           font-size: 110px;
-           width: 34px;
-          
-           margin-left: -47px;
-         font-family:  "Didot";
-         color: rgb(14, 12, 12);
-          
-            
-        } */
+     
         #search{
            
             width: 100px;
@@ -102,14 +61,15 @@
      #logbox{
        
          display: flex;
-         width: 260px;
-         margin-left: 920px;
-         /* border: solid; */
+        width: 500px;
+      margin-left: 600px;
+         
         
      }
      #logbox>div{
-         width: 84px;
-         /* border: solid; */
+        margin-right: 1px;
+        margin-left: 40px;
+         
          font-size: 9px;
          font-weight: 500;
          text-align: end;
@@ -117,9 +77,10 @@
         
      }
      #picbox{
-         display: flex;
+         border: solid 1px white
+         /* display: flex; */
          /* margin-top: 7%; */
-        /* border: solid; */
+       
      }
      #mainimg{
          width: 570px;
@@ -216,7 +177,8 @@
           
              border: none;
               background-color: white;
-              font-family: "Explora";
+              font-family: 'Courier New', Courier, monospace;
+              
           }
           .leftbtn{
               
@@ -224,7 +186,7 @@
               border: none;
            
               background-color: white;
-              font-family: "Explora";
+              font-family: 'Courier New', Courier, monospace;
           }
           .leftbtn:hover{
           
@@ -388,6 +350,102 @@ margin-top: 1%;
 
 .show {display: block;}
           /* dropdownend */
+          #leftA{
+              margin-top: 14px;
+          }
+       /* helpcss */
+   
+
+        #help {
+            margin: 0px 150px 70px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif; 
+            font-size: 22px;
+            font-style: normal;
+            color: black;
+            font-weight: 500;
+            line-height: 28px;
+        }
+        #icons {
+            /* border: 2px solid blue; */
+            display : grid;
+            gap: 4px;
+            margin-left: 80px;            
+            grid-template-columns: 180px 180px 180px 180px 180px 180px;
+            grid-template-rows: 50% 50%;
+        }
+        #icons div {
+            /* border: 2px solid red; */
+            margin-left: 50px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        img {
+            width: 30%;
+            color: black;
+            padding-left: 50px;          
+        }
+        p {
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif; 
+            font-size: 11px;
+            font-style: normal;
+            color: black;
+            font-weight: 500;
+            line-height: 16px;
+            text-align: center;
+        }
+        #icons > div:nth-child(7) > p{ 
+            line-height: 2px;
+        }
+        /* helpcssend */
+
+        /* infocss */
+        .d6{
+          height: 400px;
+           width: 1024px;
+          background-color: azure;
+          margin-left: 100px;
+        }
+        .d7{
+           margin-top: 200px;
+           height: 50px;
+           width: 800px;
+           margin-left: 100px;
+        }
+        .d8{
+           margin-top: 100px;
+           margin-left: 100px;
+        }
+        .thead{
+            font-family: Franklin Gothic medium ;
+        }
+        .td1{
+            width: 200px;
+        }
+        .td2{
+            width: 120px;
+        }
+        .table1{
+           width: 1100px;
+           font-family: Franklin Gothic ;
+           font-size: 11PX;
+        }
+        .td3{
+         text-align: end;
+        }
+       .textmargin{
+           margin: 1px;
+           font-family: Franklin Gothic;
+           font-size: 10px;
+       }
+       td>a{
+            text-decoration: none;
+            color: black;
+            font-size: 10px;
+            font-family: Franklin Gothic ;
+        }
+
+       
     </style>
 </head>
 <body style="background-color: #ffffff;" id="body">
@@ -412,14 +470,53 @@ margin-top: 1%;
    
 </div>
 <div id="logbox">
-<div id="loggin"><a href="login.html">LOG IN</a></div>
-<div id="help"><a href="Help.html">HELP</a></div>
+<div id="loggin"><a href="login.html" style="margin-left: 250px; padding-left: 60px;">LOG IN</a></div>
+<!-- <div id="help"><a href="Help.html">HELP</a></div> -->
 <div id="cart"> <a href="cart.html">CART(0)</a></div>
 </div>
 
     </div>
     <div id="picbox">
-        <div id="man"><button class="leftbtn" onclick="plusDivs()">&#10094;</button>
+       
+
+        <h2 id="help" style="margin-top: 180px;">HELP</h2>
+
+        <div id="icons" style="margin-top: 90px;">
+            <div>
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-bag.svg?ts=1550654368093" />
+                <p>SHOP AT ZARA.COM</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-product.svg?ts=1550654368093" alt="">
+                <p>PRODUCT</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-payment.svg?ts=1550654368093" alt="">
+                <p>PAYMENT</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-shipping.svg?ts=1550654368093" alt="">
+                <p>SHIPPING<p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-returns.svg?ts=1550654368093" alt="">
+                <p>EXCHANGES AND RETURNS</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-stores-and-company.svg?ts=1550654368093" alt="">
+                <p>SHOPS AND COMPANY</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-clothes-collection-info.svg?ts=1614071652367" alt="">
+                <p>CLOTHES COLLECTION</p>
+                <p>PROGRAMME</p>    
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-general-info.svg?ts=1550654368093" alt="">
+                <p>COVID-19 INFORMATION</p>
+            </div>
+        </div>
+        <!-- <div id="man"><button class="leftbtn" onclick="plusDivs()">&#10094;</button>
             <a href="man.html" id="leftA"> MAN</a>
         </div>
       
@@ -428,13 +525,79 @@ margin-top: 1%;
             <div>INTRODUCING THE FALL/WINTER 2021 COLLECTION</div>
         </div>
     
-        <div id="kids"><a href="kids.html" id="rightA">KIDS </a><button class="rightbtn" onclick="plusDivs()">&#10095;</button></div>
+        <div id="kids"><a href="kids.html" id="rightA">KIDS </a><button class="rightbtn" onclick="plusDivs()">&#10095;</button></div> -->
     </div>
 
-    continer end
 </div>
 <div id="secondndpage">
-    <label>JOIN OUR NEWSLETTER</label>
+    <div class="d7" style="margin-left: 3%;">
+        <table>
+            <tr>
+        <td class="td1 thead">HELP</td>  &nbsp;&nbsp;&nbsp;&nbsp;
+        <td class="thead">FOLLOW US  &nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="td2 thead">COMAPANY</td>&nbsp;&nbsp;&nbsp;&nbsp;
+        <td class="thead">POLICIES</td>&nbsp;&nbsp;&nbsp;&nbsp;
+     </tr>
+        <tr>
+            <td><a href="">SHOP AT ZARA.COM</a></td>
+            <td><a href="">NEWSLETTER</a></td>
+            <td><a href="">ABOUT US</a></td>
+            <td><a href="" >PRIVACY POLICY</a></td>
+        </tr>
+        <tr>
+         <td><a href="">PRODUCT</a></td>
+         <td><a href="">TIKTOK</a></td>
+         <td><a href="">OFFICES</a></td>
+         <td><a href="" >PURCHASE CINDITION</a></td>
+     </tr>
+     <tr>
+         <td><a href="">PAYMENT</a></td>
+         <td><a href="">INSTAGRAM</a></td>
+         <td><a href="">STORES</a></td>
+         <td><a href="" >COOKIES SETTINGS</a></td>
+     </tr>
+     <tr>
+         <td><a href="">SHIPPING</a></td>
+         <td><a href="">FACEBOOK</a></td>
+         <td><a href="">WORK WITH US</a></td>
+     </tr>
+     <tr>
+         <td><a href="">EXCHANGES AND RETURNS</a></td>
+         <td><a href="">TWITTER</a></td>
+     </tr>
+     <tr>
+         <td><a href="">SHOPS AND COMPANY</a></td>
+         <td><a href="">PINTEREST</a></td>
+     </tr>
+     <tr>
+         <td><a href="">CLOTHES COLLECTION PROGRAMME</a></td>
+         <td><a href="">YOUTUBE</a></td>
+     </tr>
+     <tr>
+         <td><a href="">MY ACCOUNT</a></td>
+     </tr>
+     </table>  
+     </div>
+     </div>
+     <hr style="margin-top: 300px; width: 1000px;margin-left: 11%;">
+     <div class="d8">
+     <table class="table1 " style="margin-left: 4%;">
+         <tr>
+             <td>INDIA</td>
+             <td class="td3">ENGLISH</td>
+         </tr>
+          <tr>
+             <td></td>
+             <td class="td3" style="color: gray;">&copy; ALL RIGHT RESERVED</td>
+         </tr>
+     </table>
+     </div>
+     <div class="d8" style="margin-left: 11%;">
+         <h5 class="textmargin">NAME AND ADDRESS OF THE MANUFATURE</h5>
+         <h5 class="textmargin">INDUSTRIA DE DISENO TEXTTIL, S.A. (INDITEX, S.A.)</h5>
+         <h5 class="textmargin">AVENDIA DE LA DIPUTACION, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUNA), SPAIN</h5>
+     </div>
+    <!-- <label>JOIN OUR NEWSLETTER</label>
     <input id="email" placeholder="ENTER YOUR EMAIL ADDRESS HERE" >
     <div class="d4">
         <a href="https://www.tiktok.com/@zara" class="hcolor acolor text_size">TIKTOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -448,7 +611,7 @@ margin-top: 1%;
         <h5 class="textmargin">NAME AND ADDRESS OF THE MANUFATURE</h5>
         <h5 class="textmargin">INDUSTRIA DE DISENO TEXTTIL, S.A. (INDITEX, S.A.)</h5>
         <h5 class="textmargin">AVENDIA DE LA DIPUTACION, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUNA), SPAIN</h5>
-        </div>
+        </div> -->
         </div>
       
        <!-- sidebarstart -->
